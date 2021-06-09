@@ -22,9 +22,10 @@ You then need to rotate the stack back to the minimum index (0), and you're good
 
 ## Making it even faster
 If i wasn't lasy this project could be even faster:
-- Limit reverse rotating to push values to B: When pushing an element with reverse rotate, you end up having to re execute that action for each value you push even if they're close together, that's because when you push a value the stack automatically goes up and not down.
-- Brute force different solutions: I rewrote this project because i wasn't pleased with the first approach i took, in my first version i did try using brute forcing with different magic that influenced the action count, you could very well implement this here by changing the initial A loop stack values to make the algorith take different paths, this would however slow the algorith down even more...
+- For groups, limit reverse rotating when pushing values to B: When you push an element with reverse rotate, you end up having to re execute that action for each value you push even if they're close together, that's because when you push a value the stack automatically goes up and not down.
+- Brute force different solutions: I rewrote this project because i wasn't pleased with the first approach i took, in my first version i did try using brute forcing with different magic values that influenced the action count, you could very well implement this here by changing the initial A loop stack values to make the algorith take different paths, this would however slow the algorith down even more...
 
 ## Useful guides
 https://github.com/VBrazhnik/Push_swap/wiki/Algorithm (I highly recomment you check this wiki out for a very simillar approach but without groups)
+
 https://medium.com/@jamierobertdawson/push-swap-the-least-amount-of-moves-with-two-stacks-d1e76a71789a
