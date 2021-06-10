@@ -24,6 +24,7 @@ You then need to rotate the stack back to the minimum index (0), and you're good
 If i wasn't lasy this project could be even faster:
 - For groups, limit reverse rotating when pushing values to B: When you push an element with reverse rotate, you end up having to re execute that action for each value you push even if they're close together, that's because when you push a value the stack automatically goes up and not down.
 - Brute force different solutions: I rewrote this project because i wasn't pleased with the first approach i took, in my first version i did try using brute forcing with different magic values that influenced the action count, you could very well implement this here by changing the initial A loop stack values to make the algorith take different paths, this would however slow the algorith down even more...
+- Implement some sort of Travelling salesman problem resolving algorithm to find the true shortest path to multiple values you want to push
 
 ## Useful guides
 https://github.com/VBrazhnik/Push_swap/wiki/Algorithm (I highly recomment you check this wiki out for a very simillar approach but without groups)
